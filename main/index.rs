@@ -3,7 +3,6 @@
 #![feature(allocator_api)]
 #![feature(alloc_error_handler)]
 #![feature(async_closure)]
-#![feature(cfg_match)]
 #![feature(const_mut_refs)]
 #![feature(custom_test_frameworks)]
 #![feature(panic_info_message)]
@@ -95,7 +94,7 @@ fn panic(info: &PanicInfo) -> ! {
          "@ line {}, file {}: {}",
          locale.line(),
          locale.file(),
-         info.message(),
+         info.message().unwrap(),
       );
    } else {
       println!("no panic information available");
