@@ -94,7 +94,7 @@ fn panic(info: &PanicInfo) -> ! {
          "@ line {}, file {}: {}",
          locale.line(),
          locale.file(),
-         info.message().unwrap(),
+         info.message(),
       );
    } else {
       println!("no panic information available");
