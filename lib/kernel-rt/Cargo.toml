@@ -1,0 +1,15 @@
+[package]
+name = "kernel-rt"
+description.workspace = true
+documentation.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+version.workspace = true
+
+[lib]
+name = "kert"
+path = "index.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
