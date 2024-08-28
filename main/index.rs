@@ -3,7 +3,6 @@
 #![feature(allocator_api)]
 #![feature(alloc_error_handler)]
 #![feature(async_closure)]
-#![feature(cfg_match)]
 #![feature(const_mut_refs)]
 #![feature(custom_test_frameworks)]
 #![feature(panic_info_message)]
